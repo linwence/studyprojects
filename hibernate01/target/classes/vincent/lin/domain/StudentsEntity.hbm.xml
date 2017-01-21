@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <!DOCTYPE hibernate-mapping PUBLIC
+                "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="vincent.lin.domain.StudentsEntity" table="STUDENTS">
+    <id name="sid" column="sid" type="java.lang.Integer">
+        <generator class="native"/>
+    </id>
+    <property name="sname" column="sname" type="java.lang.String"/>
+    <!--<property name="address" column="address" type="java.lang.String"/>-->
+    <property name="gender" column="gender" type="java.lang.String"/>
+    <property name="birthday" column="birthday" type="java.util.Date"/>
+    <component name="addressEntity" class="vincent.lin.domain.AddressEntity">
+        <property name="address" column="address" type="java.lang.String"/>
+        <property name="phone" column="phone" type="java.lang.String"/>
+        <property name="postcode" column="postcode" type="java.lang.String"/>
+
+    </component>
+<many-to-one name="grade" class="vincent.lin.domain.Grade">
+    <column name="gid"></column>
+</many-to-one>
+</class>
+</hibernate-mapping>

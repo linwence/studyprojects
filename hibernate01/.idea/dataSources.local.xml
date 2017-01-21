@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Oracle - @localhost" uuid="710d4f42-8195-4670-8e2b-57f4cf346db0">
+      <secret-storage>master_key</secret-storage>
+      <user-name>scott</user-name>
+    </data-source>
+    <data-source name="hibernate.cfg.xml/Hibernate" uuid="113f7f27-fb3f-46a9-98ae-3b21a8416e5d">
+      <secret-storage>master_key</secret-storage>
+      <user-name>scott</user-name>
+    </data-source>
+  </component>
+</project>

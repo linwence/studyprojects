@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="vincent.lin.domain.Grade" table="Grade">
+        <id name="gid" type="java.lang.Integer">
+            <column name="gid"/>
+            <generator class="native"/>
+        </id>
+        <property name="gdesc" column="gdesc" type="java.lang.String"/>
+        <property name="gname" column="gname" type="java.lang.String"/>
+        <set name="studentsEntities" table="students" inverse="true" cascade="save-update">
+            <key column="gid"/>
+            <one-to-many class="vincent.lin.domain.StudentsEntity"/>
+
+        </set>
+
+    </class>
+</hibernate-mapping>

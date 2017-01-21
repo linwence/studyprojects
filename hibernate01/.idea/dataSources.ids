@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Oracle - @localhost" uuid="710d4f42-8195-4670-8e2b-57f4cf346db0">
+    <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - Production&#xa;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.1.0">
+      <extra-name-characters>$#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="ORACLE" format-version="2.5">
+      <schema id="1" name="SCOTT">
+        <object-id>84</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2017-01-07.17:38:00</modified-timestamp>
+        <introspection-timestamp>2017-01-07.17:38:20</introspection-timestamp>
+      </schema>
+      <table id="2" parent="1" name="BONUS">
+        <object-id>73198</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="3" parent="1" name="DEPT">
+        <object-id>73194</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="4" parent="1" name="EMP">
+        <object-id>73196</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="5" parent="1" name="MESSAGE">
+        <object-id>83064</object-id>
+        <created-timestamp>2016-04-28.22:22:59</created-timestamp>
+        <modified-timestamp>2016-04-28.22:22:59</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="6" parent="1" name="SALGRADE">
+        <object-id>73199</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="7" parent="1" name="STUDENTS">
+        <object-id>83669</object-id>
+        <created-timestamp>2017-01-07.17:38:00</created-timestamp>
+        <modified-timestamp>2017-01-07.17:38:00</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <column id="8" parent="2" name="ENAME">
+        <data-type>VARCHAR2(10)</data-type>
+      </column>
+      <column id="9" parent="2" name="JOB">
+        <data-type>VARCHAR2(9)</data-type>
+      </column>
+      <column id="10" parent="2" name="SAL">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="11" parent="2" name="COMM">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="12" parent="3" name="DEPTNO">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(2)</data-type>
+      </column>
+      <column id="13" parent="3" name="DNAME">
+        <data-type>VARCHAR2(14)</data-type>
+      </column>
+      <column id="14" parent="3" name="LOC">
+        <data-type>VARCHAR2(13)</data-type>
+      </column>
+      <index id="15" parent="3" name="PK_DEPT">
+        <object-id>73195</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <columns>DEPTNO</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="16" parent="3" name="PK_DEPT">
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <columns>DEPTNO</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_DEPT</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="17" parent="4" name="EMPNO">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(4)</data-type>
+      </column>
+      <column id="18" parent="4" name="ENAME">
+        <data-type>VARCHAR2(10)</data-type>
+      </column>
+      <column id="19" parent="4" name="JOB">
+        <data-type>VARCHAR2(9)</data-type>
+      </column>
+      <column id="20" parent="4" name="MGR">
+        <data-type>NUMBER(4)</data-type>
+      </column>
+      <column id="21" parent="4" name="HIREDATE">
+        <data-type>DATE</data-type>
+      </column>
+      <column id="22" parent="4" name="SAL">
+        <data-type>NUMBER(7,2)</data-type>
+      </column>
+      <column id="23" parent="4" name="COMM">
+        <data-type>NUMBER(7,2)</data-type>
+      </column>
+      <column id="24" parent="4" name="DEPTNO">
+        <data-type>NUMBER(2)</data-type>
+      </column>
+      <index id="25" parent="4" name="PK_EMP">
+        <object-id>73197</object-id>
+        <created-timestamp>2010-04-02.14:20:28</created-timestamp>
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <columns>EMPNO</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="26" parent="4" name="PK_EMP">
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <columns>EMPNO</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_EMP</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="27" parent="4" name="FK_DEPTNO">
+        <modified-timestamp>2010-04-02.14:20:28</modified-timestamp>
+        <columns>DEPTNO</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.DEPT.PK_DEPT</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="28" parent="5" name="ID">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(11)</data-type>
+      </column>
+      <column id="29" parent="5" name="COMMAND">
+        <data-type>VARCHAR2(16)</data-type>
+      </column>
+      <column id="30" parent="5" name="DESCRIPTION">
+        <data-type>VARCHAR2(32)</data-type>
+      </column>
+      <column id="31" parent="5" name="CONTENT">
+        <data-type>VARCHAR2(2048)</data-type>
+      </column>
+      <index id="32" parent="5" name="SYS_C0014446">
+        <name-surrogate>1</name-surrogate>
+        <object-id>83065</object-id>
+        <created-timestamp>2016-04-28.22:23:00</created-timestamp>
+        <modified-timestamp>2016-04-28.22:23:00</modified-timestamp>
+        <columns>ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="33" parent="5" name="SYS_C0014446">
+        <name-surrogate>1</name-surrogate>
+        <modified-timestamp>2016-04-28.22:23:00</modified-timestamp>
+        <columns>ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>SYS_C0014446</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="34" parent="6" name="GRADE">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="35" parent="6" name="LOSAL">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="36" parent="6" name="HISAL">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="37" parent="7" name="SID">
+        <data-type>NUMBER(*)</data-type>
+      </column>
+      <column id="38" parent="7" name="SNAME">
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="39" parent="7" name="GENDER">
+        <data-type>VARCHAR2(2)</data-type>
+      </column>
+      <column id="40" parent="7" name="ADDRESS">
+        <data-type>VARCHAR2(200)</data-type>
+      </column>
+      <column id="41" parent="7" name="BIRTHDAY">
+        <data-type>DATE</data-type>
+      </column>
+    </database-model>
+  </data-source>
+  <data-source name="hibernate.cfg.xml/Hibernate" uuid="113f7f27-fb3f-46a9-98ae-3b21a8416e5d">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
